@@ -4,5 +4,7 @@ $user = "root";
 $password = "";
 $database = "clothes_app";
 
-$connectNow = new mysqli($serverHost,$user,$password,$database);
-?>
+$connectNow = new mysqli($serverHost, $user, $password, $database);
+
+
+ 
