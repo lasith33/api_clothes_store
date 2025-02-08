@@ -14,7 +14,7 @@ if($resultOfQuery->num_rows > 0)
     $userRecord = array();
     while($rowFound = $resultOfQuery->fetch_assoc())
     {
-        $userRecord = $rowFound;
+        $userRecord[] = $rowFound;
     }
 
     echo json_encode(
@@ -22,7 +22,7 @@ if($resultOfQuery->num_rows > 0)
             "success"=>true,
             "userData"=>$userRecord[0],
         )
-    )
+    );
     
 }
 else
